@@ -1,3 +1,4 @@
+
 #!/bin/bash
 #
 # Copyright (c) 2019-2020 P3TERX <https://p3terx.com>
@@ -11,4 +12,4 @@
 #
 
 # Modify default IP
-sed -i 's/192.168.1.1/192.168.68.69/g' package/base-files/files/bin/config_generate
+sed -i 's/192.168.68.69/192.168.68.69/g' package/base-files/files/bin/config_generate
