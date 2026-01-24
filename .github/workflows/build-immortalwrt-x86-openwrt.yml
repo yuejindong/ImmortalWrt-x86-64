@@ -32,7 +32,7 @@ env:
   DIY_P2_SH: X86/immortalwrt/diy-part2.sh
   WORK_DIR: X86_openwrt
   UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: false
+  UPLOAD_FIRMWARE:true
   UPLOAD_RELEASE: false
   TZ: Asia/Shanghai
 
