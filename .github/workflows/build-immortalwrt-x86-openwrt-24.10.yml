@@ -8,7 +8,7 @@
 # Description: Build OpenWrt using GitHub Actions
 #
 
-name: Build immortalwrt X86 OpenWrt-24.10
+name: Build immortalwrt X86 OpenWrt
 
 on:
   repository_dispatch:
@@ -20,7 +20,7 @@ on:
         required: false
         default: 'false'
   schedule:
-    - cron: 0 2 * * 5
+    - cron: 0 20 * * *
   push:
 
 env:
@@ -32,8 +32,8 @@ env:
   DIY_P2_SH: X86/immortalwrt/diy-part2.sh
   WORK_DIR: X86_openwrt
   UPLOAD_BIN_DIR: false
-  UPLOAD_FIRMWARE: false
-  UPLOAD_RELEASE: false
+  UPLOAD_FIRMWARE: true
+  UPLOAD_RELEASE: true
   TZ: Asia/Shanghai
 
 jobs:
